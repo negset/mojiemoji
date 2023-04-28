@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // };
 
   document.getElementById("convert").onclick = () => {
-    const image = new Image();
-    image.src = cv.toDataURL();
-    const w = window.open("", "_blank");
-    w.document.write(image.outerHTML);
+    const a = document.createElement("a");
+    a.href = cv.toDataURL();
+    a.download = "image.png";
+    a.click();
   };
 });
