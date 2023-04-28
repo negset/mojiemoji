@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>もじえもじ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Decol:wght@700&family=Noto+Sans+JP:wght@700&family=Noto+Serif+JP:wght@700&family=Reggae+One&family=Yuji+Syuku&display=swap"
+    rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <canvas id="canvas" width="128" height="128"></canvas>
+
+  <div>
+    <label for="text">文字:</label>
+    <input type="text" id="text" value="あ">
+  </div>
+  <div>
+    <label for="font">フォント:</label>
+    <select id="font">
+      <option value="Noto Sans JP">ゴシック</option>
+      <option value="Noto Serif JP">明朝</option>
+      <option value="Hachi Maru Pop">ポップ</option>
+      <option value="Yuji Syuku">筆</option>
+      <option value="Reggae One">装飾1</option>
+      <option value="Kaisei Decol">装飾2</option>
+    </select>
+  </div>
+  <div>
+    <label for="color">色:</label>
+    <input type="color" id="color" value="#ffffff">
+  </div>
+  <!-- <div>
+    <label for="space">間隔:</label>
+    <input type="number" id="space" value="0">
+  </div> -->
+  <input type="button" value="画像に変換" id="convert">
+</body>
+
+</html>
